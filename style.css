@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: OpenSansRegular, sans-serif;
+    font-size: 15px;
+    color: #000000;
+    background-color: #f7f7f7;
+    -webkit-font-smoothing: antialiased;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 18px;
+    border-bottom: 1px solid lightgray;
+    background-color: white;
+    box-shadow: 0px 1px 1px 0px lightgrey;
+}
+form{
+    justify-self: center;
+    margin-top: 12em;
+}
+h2{
+    text-align: center;
+    font-size: 19px;
+}
+.div{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-top: 10px;
+}
+.check{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.input{
+    width: 300px;
+    height: 25px;
+}
+button{
+    width: 100%;
+    height: 2rem;
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    background-color: #0073D1;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 2rem;
+    cursor: pointer;
+    margin-top: 30px;
+}
+label{
+    opacity: 0.7;
+}
+.eml{
+    justify-self: center;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+a{
+    color: blue;
+    font-size: 17px;
+    font-weight: 700;
+}
+footer{
+    background-color: black;
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 0px;
+    font-size: 10px;
+}
+span{
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 20px;
+    /* padding: 5px; */
+}
+.adds{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+.adds1{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-top: -10px;
+    padding-bottom: 12px;
+}
