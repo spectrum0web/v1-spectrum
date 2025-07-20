@@ -1,39 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spectrum</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spectrum</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #f7f7f7;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    a {
+      display: inline-block;
+      background-color: black;
+      color: white;
+      text-decoration: none;
+      padding: 15px 40px;
+      border-radius: 10px;
+      font-size: 1rem;
+      text-transform: uppercase;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+      text-align: center;
+    }
+
+    a:hover {
+      background-color: rgb(37, 37, 37);
+    }
+
+    @media (max-width: 600px) {
+      a {
+        /* padding: 12px 24px; */
+        width: 250px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <style>
-        body{
-            margin-top: 200px;
-            justify-self: center;
-            align-self: center;
-            background-color: #f7f7f7;
-        }
-        a{
-            background-color: black;
-            color: white;
-            text-decoration: none;
-            padding: 20px 120px;
-            border-radius: 10px;
-            font-size: 20px;
-            text-transform: uppercase;
-            font-family: sans-serif;
-            /* margin-top: 30px; */
-        }
-        a:hover{
-            background-color: rgb(37, 37, 37);
-        }
-    </style>
-    <div>
-        <img width="500" src="https://th.bing.com/th?id=OIP.1nkNh4w2ToKhXIz3771hAgHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="">
-    </div>
 
-    <div>
-        <a href="./login.html">Click here to continue</a>
-    </div>
+  <img src="https://th.bing.com/th?id=OIP.1nkNh4w2ToKhXIz3771hAgHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Spectrum Banner"/>
+
+  <a href="./login.html">Click here to continue</a>
+
 </body>
 </html>

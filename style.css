@@ -1,97 +1,185 @@
 * {
-    margin: 0;
-    padding: 0;
-}
-body {
-    font-family: OpenSansRegular, sans-serif;
-    font-size: 15px;
-    color: #000000;
-    background-color: #f7f7f7;
-    -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    padding: 18px;
-    border-bottom: 1px solid lightgray;
-    background-color: white;
-    box-shadow: 0px 1px 1px 0px lightgrey;
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: #000000;
+  background-color: #f7f7f7;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-form{
-    justify-self: center;
-    margin-top: 12em;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 20px;
+  border-bottom: 1px solid lightgray;
+  background-color: white;
+  box-shadow: 0px 1px 1px 0px lightgrey;
+  flex-wrap: wrap;
 }
-h2{
+
+header img {
+  max-width: 120px;
+  height: auto;
+}
+
+form {
+  max-width: 400px;
+  width: 90%; /* Makes it responsive on smaller screens */
+  padding: 2em;
+  border-radius: 8px;
+  justify-self: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 6em auto 2em; /* Added margin for better vertical spacing */
+}
+
+
+h2 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.input {
+  width: 100%;
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.check {
+  margin-bottom: 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+button {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 4px;
+  border: none;
+  color: #FFFFFF;
+  background-color: #0073D1;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+label {
+  opacity: 0.7;
+}
+
+.eml {
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+a {
+  color: blue;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 10px;
+  box-sizing: border-box;
+  margin-top: auto;
+}
+
+.adds,
+.adds1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.adds p,
+.adds1 p {
+  margin: 5px 10px;
+  white-space: nowrap;
+}
+
+span {
+  margin: 0 5px;
+  font-size: 16px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    font-size: 19px;
+  }
+.menu{
+    display: none;
 }
-.div{
-    display: flex;
+  form {
+    width: 90%;
+    padding: 1.5em;
+    margin-top: 3em;
+  }
+
+  .adds,
+  .adds1 {
     flex-direction: column;
-    gap: 9px;
-    margin-top: 10px;
-}
-.check{
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-.input{
-    width: 300px;
-    height: 25px;
-}
-button{
-    width: 100%;
-    height: 2rem;
-    border-radius: 4px;
-    border: none;
-    color: #FFFFFF;
-    background-color: #0073D1;
-    font-size: 13px;
-    letter-spacing: 1px;
-    line-height: 2rem;
-    cursor: pointer;
-    margin-top: 30px;
-}
-label{
-    opacity: 0.7;
-}
-.eml{
-    justify-self: center;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-a{
-    color: blue;
-    font-size: 17px;
-    font-weight: 700;
-}
-footer{
-    background-color: black;
-    color: white;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    padding: 0px;
-    font-size: 10px;
-}
-span{
-    margin-left: 15px;
-    margin-right: 15px;
-    font-size: 20px;
-    /* padding: 5px; */
-}
-.adds{
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-}
-.adds1{
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    margin-top: -10px;
-    padding-bottom: 12px;
+    align-items: center;
+  }
+
+  .adds p,
+  .adds1 p {
+    margin: 4px 0;
+    white-space: normal;
+  }
+
+  span {
+    display: none; /* Hide dividers for mobile */
+  }
+
+  a {
+    font-size: 14px;
+  }
 }
